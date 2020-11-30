@@ -1,0 +1,9 @@
+S:\92_Workspace\02_All_Udemy_Beer_Project\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\BeerInventoryApplication.java
+S:\92_Workspace\02_All_Udemy_Beer_Project\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\web\model\BeerInventoryDto.java
+S:\92_Workspace\02_All_Udemy_Beer_Project\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\bootstrap\BeerInventoryBootstrap.java
+S:\92_Workspace\02_All_Udemy_Beer_Project\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\web\mappers\BeerInventoryMapper.java
+S:\92_Workspace\02_All_Udemy_Beer_Project\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\web\mappers\DateMapper.java
+S:\92_Workspace\02_All_Udemy_Beer_Project\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\domain\BeerInventory.java
+S:\92_Workspace\02_All_Udemy_Beer_Project\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\web\controllers\BeerInventoryController.java
+S:\92_Workspace\02_All_Udemy_Beer_Project\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\repositories\BeerInventoryRepository.java
+S:\92_Workspace\02_All_Udemy_Beer_Project\mssc-beer-inventory-service\src\main\java\guru\sfg\beer\inventory\service\domain\BaseEntity.java

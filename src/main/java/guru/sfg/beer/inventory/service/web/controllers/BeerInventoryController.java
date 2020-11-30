@@ -26,11 +26,13 @@ public class BeerInventoryController {
 
     @GetMapping("api/v1/beer/{beerId}/inventory")
     List<BeerInventoryDto> listBeersById(@PathVariable UUID beerId){
+
+        System.out.println("-------------");
         log.debug("Finding Inventory for beerId:" + beerId);
 
-        return beerInventoryRepository.findAllByBeerId(beerId)
-                .stream()
-                .map(beerInventoryMapper::beerInventoryToBeerInventoryDto)
-                .collect(Collectors.toList());
+return beerInventoryRepository.findAllByBeerId(beerId)
+                              .stream()
+                              .map(beerInventoryMapper::beerInventoryToBeerInventoryDto)
+                              .collect(Collectors.toList());
     }
 }

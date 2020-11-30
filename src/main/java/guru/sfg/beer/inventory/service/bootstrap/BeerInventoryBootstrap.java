@@ -15,7 +15,7 @@ import java.util.UUID;
 @Slf4j
 @RequiredArgsConstructor
 @Component
-public class BeerInvntoryBootstrap implements CommandLineRunner {
+public class BeerInventoryBootstrap implements CommandLineRunner {
     public static final String BEER_1_UPC = "0631234200036";
     public static final String BEER_2_UPC = "0631234300019";
     public static final String BEER_3_UPC = "0083783375213";
@@ -34,25 +34,25 @@ public class BeerInvntoryBootstrap implements CommandLineRunner {
 
     private void loadInitialInv() {
         beerInventoryRepository.save(BeerInventory
-                .builder()
-                .beerId(BEER_1_UUID)
-                .upc(BEER_1_UPC)
-                .quantityOnHand(50)
-                .build());
+                                                 .builder()
+                                                 .beerId(BEER_1_UUID)
+                                                 .upc(BEER_1_UPC)
+                                                 .quantityOnHand(50)
+                                                 .build());
 
         beerInventoryRepository.save(BeerInventory
-                .builder()
-                .beerId(BEER_2_UUID)
-                .upc(BEER_2_UPC)
-                .quantityOnHand(50)
-                .build());
+                                                 .builder()
+                                                 .beerId(BEER_2_UUID)
+                                                 .upc(BEER_2_UPC)
+                                                 .quantityOnHand(50)
+                                                 .build());
 
         beerInventoryRepository.saveAndFlush(BeerInventory
-                .builder()
-                .beerId(BEER_3_UUID)
-                .upc(BEER_3_UPC)
-                .quantityOnHand(50)
-                .build());
+                                                 .builder()
+                                                 .beerId(BEER_3_UUID)
+                                                 .upc(BEER_3_UPC)
+                                                 .quantityOnHand(50)
+                                                 .build());
 
         log.debug("Loaded Inventory. Record count: " + beerInventoryRepository.count());
     }
