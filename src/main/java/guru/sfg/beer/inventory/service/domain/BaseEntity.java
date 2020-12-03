@@ -49,7 +49,7 @@ public class BaseEntity {
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     @Type(type="org.hibernate.type.UUIDCharType")
-    @Column(length = 36,  updatable = false, nullable = false )
+    @Column(length = 36, columnDefinition = "varchar(36)", updatable = false, nullable = false )
     private UUID id;
 
     @Version
@@ -63,6 +63,8 @@ public class BaseEntity {
     private Timestamp lastModifiedDate;
 
     public boolean isNew() {
+
         return this.id == null;
     }
 }
+// columnDefinition = "varchar(36)" we put "varchar(36)" as in MySql getting error while saving UUID
